@@ -26,7 +26,7 @@ const config = {
 
 Open `http://localhost:1000` in your browser, you can use `eruda` to debug your mobile app
 
-[](./screenshot.png)
+![](./screenshot.png)
 
 ## options
 
