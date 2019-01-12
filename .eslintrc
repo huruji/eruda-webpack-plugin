@@ -1,0 +1,32 @@
+{
+  "root": true,
+  "extends": "airbnb",
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "plugins": [],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "ecmaFeatures": {
+      "impliedStrict": true
+    },
+    "sourceType": "module"
+  },
+  "rules": {
+    "comma-dangle": ["error", "only-multiline"],
+    "semi": 0,
+    "func-names": 0,
+    "eqeqeq": 0,
+    "no-plusplus": 0,
+    "prefer-destructuring": ["error", {
+      "array": false,
+      "object": false
+    }],
+    "no-param-reassign": ["error", {
+      "props": false
+    }]
+  }
+}
