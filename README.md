@@ -7,6 +7,10 @@ A webpack plugin of eruda to help you develop mobile app
 ## How to use
 
 ```js
+npm i --save-dev eruda-webpack-plugin
+```
+
+```js
 // webpack.config.js
 const ErudaWebapckPlugin = reuire('eruda-webpack-plugin')
 const HtmlWebpackPlutin = require('html-webpack-plugin')
