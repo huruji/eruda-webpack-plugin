@@ -1,3 +1,5 @@
+[English](./README.md) | 中文
+
 # eruda-webpack-plugin
 
 eruda 的 webpack 插件

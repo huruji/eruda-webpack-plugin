@@ -1,3 +1,5 @@
+English | [中文](./README_CN.md)
+
 # eruda-webpack-plugin
 A webpack plugin of eruda to help you develop mobile app
 
