@@ -28,12 +28,42 @@ Open `http://localhost:1000` in your browser, you can use `eruda` to debug your 
 
 <img  width="350" align="center" src="./screenshot.png" />
 
-## options
+## Using eruda's plugin
+
+```js
+new ErudaWebapckPlugin({
+  plugins: ['fps', 'timing']
+})
+```
+
+## Options
+
+### force
 
 `eruda-webpack-plugin` only works in `development` mode, if you need it in other modes, you can set `force` as `true`
 
 ```js
 new ErudaWebpackPlugin({
   force: true
+})
+```
+
+### tool
+
+Choose which eruda's tools you want, by default all will be added.
+
+```js
+new ErudaWebpackPlugin({
+  tool: ['console', 'elements']
+})
+```
+
+### plugins
+
+add eruda's plugin
+
+```js
+new ErudaWebapckPlugin({
+  plugins: ['fps', 'timing']
 })
 ```
