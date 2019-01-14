@@ -4,7 +4,7 @@
   "description": "A webpack plugin of eruda to help you develop mobile app",
   "main": "index.js",
   "scripts": {
-    "release": "standard-version",
+    "release": "standard-version && git push --follow-tags origin master && npm publish",
     "first-release": "standard-version --first-release"
   },
   "repository": {
