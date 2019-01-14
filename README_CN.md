@@ -2,7 +2,7 @@
 
 # eruda-webpack-plugin
 
-eruda 的 webpack 插件
+[eruda](https://github.com/liriliri/eruda) 的 webpack 插件
 
 ## 使用
 

@@ -1,7 +1,7 @@
 English | [中文](./README_CN.md)
 
 # eruda-webpack-plugin
-A webpack plugin of eruda to help you develop mobile app
+A webpack plugin of [eruda](https://github.com/liriliri/eruda) to help you develop mobile app
 
 
 ## How to use
