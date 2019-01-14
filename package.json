@@ -4,7 +4,8 @@
   "description": "A webpack plugin of eruda to help you develop mobile app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "release": "standard-version",
+    "first-release": "standard-version --first-release"
   },
   "repository": {
     "type": "git",
@@ -35,6 +36,11 @@
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-react": "^7.12.3"
-  }
+    "eslint-plugin-react": "^7.12.3",
+    "standard-version": "^4.4.0"
+  },
+  "files": [
+    "index.js",
+    "lib"
+  ]
 }
