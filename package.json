@@ -1,6 +1,6 @@
 {
   "name": "eruda-webpack-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A webpack plugin of eruda to help you develop mobile app",
   "main": "index.js",
   "scripts": {
