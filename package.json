@@ -18,7 +18,17 @@
   },
   "homepage": "https://github.com/huruji/eruda-webpack-plugin#readme",
   "dependencies": {
-    "eruda": "^1.5.4"
+    "camel-case": "^3.0.0",
+    "eruda": "^1.5.4",
+    "eruda-benchmark": "^1.0.0",
+    "eruda-code": "^1.0.0",
+    "eruda-dom": "^1.0.1",
+    "eruda-features": "^1.0.2",
+    "eruda-fps": "^1.0.2",
+    "eruda-geolocation": "^1.1.0",
+    "eruda-memory": "^1.0.1",
+    "eruda-orientation": "^1.0.0",
+    "eruda-timing": "^1.1.2"
   },
   "devDependencies": {
     "eslint": "^5.7.0",
