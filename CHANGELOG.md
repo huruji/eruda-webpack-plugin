@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/huruji/eruda-webpack-plugin/compare/v1.0.1...v1.1.0) (2019-01-16)
+
+
+### Bug Fixes
+
+* :bug: fix no callback ([ae111c8](https://github.com/huruji/eruda-webpack-plugin/commit/ae111c8))
+
+
+### Features
+
+* :sparkles: support webpack 3 ([32b7b44](https://github.com/huruji/eruda-webpack-plugin/commit/32b7b44))
+
+
+
 <a name="1.0.1"></a>
 ## [1.0.1](https://github.com/huruji/eruda-webpack-plugin/compare/v1.0.0...v1.0.1) (2019-01-14)
 
