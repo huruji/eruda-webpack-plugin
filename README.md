@@ -13,7 +13,7 @@ npm i --save-dev eruda-webpack-plugin
 ```js
 // webpack.config.js
 const ErudaWebpackPlugin = require('eruda-webpack-plugin')
-const HtmlWebpackPlutin = require('html-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const config = {
   devServer: {
@@ -22,7 +22,7 @@ const config = {
   },
   mode: "development",
   plugins: [
-    new HtmlWebpackPlutin({
+    new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'index.html')
     }),
     new ErudaWebpackPlugin()
