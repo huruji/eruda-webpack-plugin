@@ -12,13 +12,13 @@ npm i --save-dev eruda-webpack-plugin
 
 ```js
 // webpack.config.js
-const ErudaWebpackPlugin = reuire('eruda-webpack-plugin')
+const ErudaWebpackPlugin = require('eruda-webpack-plugin')
 const HtmlWebpackPlutin = require('html-webpack-plugin')
 
 const config = {
   devServer: {
         contentBase: path.join(__dirname, 'dist'),
-        port: 10000
+        port: 1000
   },
   mode: "development",
   plugins: [
