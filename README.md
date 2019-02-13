@@ -37,7 +37,7 @@ Open `http://localhost:1000` in your browser, you can use `eruda` to debug your 
 ## Using eruda's plugin
 
 ```js
-new ErudaWebapckPlugin({
+new ErudaWebpackPlugin({
   plugins: ['fps', 'timing']
 })
 ```
@@ -69,7 +69,7 @@ new ErudaWebpackPlugin({
 add eruda's plugin
 
 ```js
-new ErudaWebapckPlugin({
+new ErudaWebpackPlugin({
   plugins: ['fps', 'timing']
 })
 ```
