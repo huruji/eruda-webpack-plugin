@@ -18,7 +18,7 @@ const HtmlWebpackPlutin = require('html-webpack-plugin')
 const config = {
   devServer: {
         contentBase: path.join(__dirname, 'dist'),
-        port: 10000
+        port: 1000
   },
   mode: "development",
   plugins: [
@@ -57,7 +57,7 @@ new ErudaWebpackPlugin({
 
 ### tool
 
-选择你想要使用的 eruda 的功能，默认会全部加载。 
+选择你想要使用的 eruda 的功能，默认会全部加载。
 
 ```js
 new ErudaWebpackPlugin({
@@ -72,5 +72,29 @@ new ErudaWebpackPlugin({
 ```js
 new ErudaWebapckPlugin({
   plugins: ['fps', 'timing']
+})
+```
+
+### entry
+
+需要被注入 `eruda` 实例的输出文件
+
+默认所有的 `.js` 文件都会被注入
+
+```js
+new ErudaWebpackPlugin({
+  entry: [/index\.js$/, /page1\.js$/]
+})
+```
+
+### filters
+
+不需要注入 `eruda` 实例的输出文件
+
+这个选项和 `entry` 正好相反
+
+```js
+new ErudaWebpackPlugin({
+  filters: [/subpage\.js$/]
 })
 ```

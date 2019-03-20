@@ -25,7 +25,9 @@ const config = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'index.html')
     }),
-    new ErudaWebpackPlugin()
+    new ErudaWebpackPlugin({
+      entry: /index\.js$/
+    })
   ]
 }
 ```
@@ -71,5 +73,29 @@ add eruda's plugin
 ```js
 new ErudaWebpackPlugin({
   plugins: ['fps', 'timing']
+})
+```
+
+### entry
+
+the assets which should inject `eruda` instance
+
+all `.js` assets will be injected by default
+
+```js
+new ErudaWebpackPlugin({
+  entry: [/index\.js$/, /page1\.js$/]
+})
+```
+
+### filters
+
+the assets which don't need inject `eruda` instance
+
+this option is contrary to `entry`
+
+```js
+new ErudaWebpackPlugin({
+  filters: [/subpage\.js$/]
 })
 ```
