@@ -1,6 +1,6 @@
 {
   "name": "eruda-webpack-plugin-next",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "A webpack plugin of eruda to help you develop mobile app",
   "main": "index.js",
   "scripts": {
