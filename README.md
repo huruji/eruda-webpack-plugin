@@ -1,4 +1,5 @@
 English | [中文](./README_CN.md)
+[![NPM](https://nodei.co/npm/eruda-webpack-plugin.png)](https://npmjs.org/package/eruda-webpack-plugin)
 
 # eruda-webpack-plugin
 A webpack plugin of [eruda](https://github.com/liriliri/eruda) to help you develop mobile app
