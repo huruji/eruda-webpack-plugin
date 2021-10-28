@@ -1,9 +1,15 @@
 const path = require('path')
-const ErudaHtmlPlugin = require('../../lib/plugin')
 
-module.exports = {
-  context: path.resolve(__dirname, '../boilerplate/'),
-  plugins: [
-    new ErudaHtmlPlugin()
-  ]
-}
+const { merge } = require('webpack-merge')
+
+const ErudaHtmlPlugin = require('../../lib/plugin')
+const contextConfig = require('./context')
+
+module.exports = merge(
+  contextConfig,
+  {
+    plugins: [
+      new ErudaHtmlPlugin()
+    ]
+  },
+)
