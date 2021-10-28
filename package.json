@@ -4,6 +4,7 @@
   "description": "A webpack plugin of eruda to help you develop mobile app",
   "main": "index.js",
   "scripts": {
+    "test": "mocha test/spec/",
     "release": "standard-version && git push --follow-tags origin master && npm publish",
     "release:first": "standard-version --first-release && git push --follow-tags origin master && npm publish",
     "release:major": "standard-version --release-as major && git push --follow-tags origin master && npm publish",
