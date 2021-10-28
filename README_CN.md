@@ -1,5 +1,7 @@
 [English](./README.md) | 中文
 
+[![NPM](https://nodei.co/npm/eruda-webpack-plugin.png)](https://npmjs.org/package/eruda-webpack-plugin)
+
 # eruda-webpack-plugin
 
 [eruda](https://github.com/liriliri/eruda) 的 webpack 插件
