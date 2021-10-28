@@ -1,3 +1,5 @@
+const webpack = require('webpack')
+
 describe('ErudaWebpackPlugin', () => {
 
   it('Should do nothing if the webpack mode is not "development".', async () => {
