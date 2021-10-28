@@ -1,5 +1,9 @@
+const path = require('path')
+
 const webpack = require('webpack')
 const { merge } = require('webpack-merge')
+
+const runCompiler = require('../lib/runCompiler')
 
 const cleanConfig = require('../boilerplate/webpack.config.js')
 const defaultConfig = require('../config/default')
@@ -7,7 +11,9 @@ const defaultConfig = require('../config/default')
 describe('ErudaWebpackPlugin', () => {
 
   it('Should do nothing if the webpack mode is not "development".', async () => {
-    const cleanCompiler = webpack(cleanConfig)
+    const cleanCompiler = webpack(merge(cleanConfig, {
+      context: path.resolve(__dirname, '../boilerplate/'),
+    }))
     const extendCompiler = webpack(merge(cleanConfig, defaultConfig, {
       mode: 'production'
     }))
