@@ -1,4 +1,5 @@
 const webpack = require('webpack')
+const merge = require('webpack-merge')
 
 const cleanConfig = require('../boilerplate/webpack.config.js')
 
