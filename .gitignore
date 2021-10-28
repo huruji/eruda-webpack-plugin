@@ -116,3 +116,7 @@ typings/
 
 ##
 .vscode
+
+# test distributive folder
+
+test/boilerplate/dist
