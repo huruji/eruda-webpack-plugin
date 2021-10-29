@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/huruji/eruda-webpack-plugin/compare/v1.5.0...v1.6.0) (2021-10-29)
+
+
+### Bug Fixes
+
+* eruda is not injected correctly, ([3d83a6b](https://github.com/huruji/eruda-webpack-plugin/commit/3d83a6b5533e533fd2d2cf807d890530e67d86a5))
+
 ## [1.5.0](https://github.com/huruji/eruda-webpack-plugin/compare/v1.2.0...v1.5.0) (2021-09-17)
 
 ## [1.4.0](https://github.com/huruji/eruda-webpack-plugin/compare/v1.2.0...v1.4.0) (2021-09-17)
