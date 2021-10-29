@@ -47,9 +47,22 @@ new ErudaWebpackPlugin({
 
 ## Options
 
+### injectOnlyOnce (make sure your npm package version > `1.5.0`)
+
+Ensure `eruda` and it's plugins will be injected only once. You can drink a cup of coffe instead of write the regex of `entry` option.
+
+**Default value: `true`**
+
+```js
+new ErudaWebpackPlugin({
+  injectOnlyOnce: true
+})
+```
 ### force
 
 `eruda-webpack-plugin` only works in `development` mode, if you need it in other modes, you can set `force` as `true`
+
+**Default value: `false`**
 
 ```js
 new ErudaWebpackPlugin({

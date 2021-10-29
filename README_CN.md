@@ -46,10 +46,23 @@ new ErudaWebapckPlugin({
 
 ## Options
 
+### injectOnlyOnce (确保你的npm包版本号 > `1.5.0`)
+
+确保 `eruda` 和插件仅会被注入一次。你可以省下时间来喝杯咖啡，而不用去绞尽脑汁写 `entry` 选择的正则表达式了。
+
+**默认值: `true`**
+
+```js
+new ErudaWebpackPlugin({
+  injectOnlyOnce: true
+})
+```
+
 ### force
 
-
 `eruda-webpack-plugin` 默认只会在 `development` mode 生效, 如果你在其他 mode 中也想使用，可以设置 `force` 为 `true`
+
+**默认值: `false`**
 
 ```js
 new ErudaWebpackPlugin({
