@@ -34,5 +34,16 @@ describe('ErudaWebpackPlugin', function () {
     assert.strictEqual(cleanContent, extendContent)
   })
 
-  it('Should inject eruda code into .js output files.')
+  it('Should inject some code into .js output files.', async function () {
+    
+    const cleanCompiler = webpack(merge(cleanConfig, contextConfig))
+    await runCompiler(cleanCompiler)
+    const cleanContent = readFileFromDist('main.js')
+
+    const defaultCompiler = webpack(defaultConfig)
+    await runCompiler(defaultCompiler)
+    const defaultContent = readFileFromDist('main.js')
+    
+    assert.isAbove(defaultContent.length, cleanContent.length)
+  })
 })
