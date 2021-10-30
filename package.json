@@ -4,6 +4,7 @@
   "description": "A webpack plugin of eruda to help you develop mobile app",
   "main": "index.js",
   "scripts": {
+    "test": "mocha test/spec/",
     "release": "standard-version && git push --follow-tags origin master && npm publish",
     "release:first": "standard-version --first-release && git push --follow-tags origin master && npm publish",
     "release:major": "standard-version --release-as major && git push --follow-tags origin master && npm publish",
@@ -32,15 +33,21 @@
     "eruda-geolocation": "^2.0.0",
     "eruda-memory": "^2.0.0",
     "eruda-orientation": "^2.0.0",
-    "eruda-timing": "^2.0.0"
+    "eruda-timing": "^2.0.0",
+    "webpack-sources": "^3.2.1"
   },
   "devDependencies": {
+    "chai": "^4.3.4",
     "eslint": "^5.7.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.12.3",
-    "standard-version": "^9.3.0"
+    "html-webpack-plugin": "^5.5.0",
+    "mocha": "^9.1.3",
+    "standard-version": "^9.3.0",
+    "webpack": "^5.60.0",
+    "webpack-merge": "^5.8.0"
   },
   "files": [
     "index.js",
