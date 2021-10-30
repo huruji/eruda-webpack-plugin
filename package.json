@@ -33,7 +33,8 @@
     "eruda-geolocation": "^2.0.0",
     "eruda-memory": "^2.0.0",
     "eruda-orientation": "^2.0.0",
-    "eruda-timing": "^2.0.0"
+    "eruda-timing": "^2.0.0",
+    "webpack-sources": "^3.2.1"
   },
   "devDependencies": {
     "chai": "^4.3.4",
