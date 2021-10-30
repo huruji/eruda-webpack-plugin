@@ -7,20 +7,16 @@ class WebpackCompilationError extends Error {
 }
 
 async function runCompiler(compiler) {
-
   return (new Promise((resolve, reject) => {
-
     compiler.run((err, stats) => {
       try {
-
         if (err) throw err
         if (stats.hasErrors()) throw new WebpackCompilationError(stats)
 
-        compiler.close((closeErr) => !closeErr || reject(closeErr))
+        compiler.close(closeErr => !closeErr || reject(closeErr))
         resolve()
-
       } catch (error) {
-        compiler.close((closeErr) => !closeErr || reject(closeErr))
+        compiler.close(closeErr => !closeErr || reject(closeErr))
         reject(error)
       }
     })
